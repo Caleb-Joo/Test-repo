@@ -1,1 +1,8 @@
 import requests
+
+tempVar = requests.get("https://api.chucknorris.io/jokes/random")
+
+print("The Joke:")
+
+tempVar2 = tempVar.json()
+print(tempVar2["value"])
